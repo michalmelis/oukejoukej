@@ -5,9 +5,11 @@ public class Main {
     public static void main(String[] args)
 
     {
-        Student jozko = new Student("Jozko Mrkvicka", 12345);
+        Student joke1 = new Student("John", 12345,"+421950867777", "Bratislava" );
+        Student joke2 = new Student("Sam", 12345,"+421950867789","Martin");
 
-        System.out.println(jozko.toString());
+        System.out.println(joke1.toString());
+        System.out.println(joke2.toString());
     }
 
 }
