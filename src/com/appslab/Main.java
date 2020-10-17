@@ -2,19 +2,22 @@ package com.appslab;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main
+{
 
-    public static void main(String[] args) {
-        System.out.println(rps("paper", "paper"));
-        System.out.println(rps("paper", "rock"));
-
-    }
-    public static String rps(String player1, String player2)
+    public static void main(String[] args)
     {
-        if (player1 == "rock" && player2 == "scissors" || player1 == "paper" && player2 == "rock" || player1 == "scissors" && player2 == "paper")
-            return "Player 1 wins";
-        if (player2 == "rock" && player1 == "scissors" || player2 == "paper" && player1 == "rock" || player2 == "scissors" && player1 == "paper")
-            return "Player 2 wins";
-        return "TIE";
+       int largeArray[] = {5,4,6,8,84,8474,585,65,84,9,15,35,44,27,82,94};
+       int smallest = largeArray[0];
+       int largest  =  largeArray[0];
+
+       for(int i = 0; i < largeArray.length; i++)
+       {
+           if (largeArray[i] < smallest) smallest = largeArray[i];
+           if (largeArray[i] > largest) largest = largeArray[i];
+       }
+
+       System.out.println(smallest+largest);
+
     }
 }
