@@ -7,15 +7,16 @@ import static java.lang.System.*;
 
 public class Main {
 
-    public static void main(String[] args) {
-        String a = "bummub";
-        System.out.println(Arrays.toString(checkPalindrome(new char[]('')));
-    }
-    public static boolean checkPalindrome(String[] a)
+    public static void main(String[] args)
     {
-        for (int i = 0; i < a.length/2; i++)
+        String test = "jej";
+        System.out.println(checkPalindrome(test));
+    }
+    public static boolean checkPalindrome(String a)
+    {
+        for (int i = 0; i < a.length()/2; i++)
         {
-            if (a[i] == a[a.length-1-i]) {
+            if (a.charAt(i) != a.charAt(a.length()-1-i)) {
                 return false;
             }
 
