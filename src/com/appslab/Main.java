@@ -5,26 +5,14 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class Main {
-
+public class Main
+{
     public static void main(String[] args)
     {
-        String test = "jej";
-        System.out.println(checkPalindrome(test));
+        Student first     = new Student("Mickley", 133789);
+        Student second    = new Student("Luky",165811);
+        System.out.println(first.toString());
+        System.out.println(second.toString());
     }
-    public static boolean checkPalindrome(String a)
-    {
-        for (int i = 0; i < a.length()/2; i++)
-        {
-            if (a.charAt(i) != a.charAt(a.length()-1-i)) {
-                return false;
-            }
 
-
-        }
-
-
-        return true;
-
-    }
 }
