@@ -1,18 +1,24 @@
 package com.appslab;
 import java.lang.String;
-import java.util.Arrays;
-import java.util.Scanner;
-
-import static java.lang.System.*;
 
 public class Main
 {
-    public static void main(String[] args)
-    {
-        Student first     = new Student("Mickley", 133789);
-        Student second    = new Student("Luky",165811);
-        System.out.println(first.toString());
-        System.out.println(second.toString());
+    public static void main(String[] args) {
+        System.out.println( calculateBudget(getPeople()));
+    }
+
+    public static int calculateBudget(Person[] people){
+        int totalBudget = 0;
+        for (Person p:people){
+            totalBudget += p.getBudget();
+        }
+        return totalBudget;
+    }
+    public static Person[] getPeople() {
+        Person person1 = new Person("Mymaan", 21, 29000);
+        Person person2 = new Person("Nowaay", 32, 32000);
+        Person person3 = new Person("Yos", 16, 1600);
+        return new Person[]{person1, person2, person3};
     }
 
 }
